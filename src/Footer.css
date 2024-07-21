@@ -1,0 +1,10 @@
+.Footer footer {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+}
+
+.Footer footer a {
+  color: maroon;
+  text-decoration: none;
+}

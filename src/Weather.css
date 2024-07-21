@@ -1,0 +1,26 @@
+.Wather h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.Weather p strong {
+  color: teal;
+}
+
+.Weather .current-weather {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.Weather .current-weather p {
+  margin: 25px 0;
+}
+
+.Weather main .currentTemp {
+  display: block;
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+}
