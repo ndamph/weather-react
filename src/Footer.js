@@ -7,17 +7,25 @@ export default function Footer() {
     <div className="Footer">
       <footer>
         <p>
-          This project was coded by
-          <a href="#" target="_blank">
+          This project was coded by{" "}
+          <a
+            href="https://nadine-damphousse.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Nadine Damphousse
           </a>{" "}
           and is
-          <a href="#" target="_blank">
+          <a
+            href="https://github.com/ndamph/weather-react"
+            target="_blank"
+            rel="noreferrer"
+          >
             {" "}
             on GitHub
           </a>{" "}
-          and
-          <a href="#" target="_blank">
+          and{" "}
+          <a href="#" target="_blank" rel="noreferrer">
             hosted on Netlify
           </a>
         </p>
