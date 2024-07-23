@@ -9,7 +9,7 @@ export default function Search() {
         <form>
           <input
             type="search"
-            class="searchBar"
+            classNaame="searchBar"
             placeholder="Enter a city.."
             id="search-bar"
             autofocus
@@ -17,7 +17,7 @@ export default function Search() {
           />
           <input
             type="submit"
-            class="searchButton"
+            className="searchButton"
             value="Search"
             id="search-button"
           />

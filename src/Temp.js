@@ -4,7 +4,7 @@ export default function Temp() {
   return (
     <div className="Temp">
       {" "}
-      <div class="currentTemp">
+      <div className="currentTemp">
         ☀️ <span class="currentTempDigits">14</span>°C
       </div>
     </div>
