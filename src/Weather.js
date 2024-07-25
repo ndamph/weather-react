@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./Weather.css";
 import Temp from "./Temp";
 
 export default function Weather() {
