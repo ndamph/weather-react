@@ -1,0 +1,11 @@
+.Weather .tempDigits {
+  font-size: 80px;
+}
+
+.Weather .currentTemp {
+  font-size: 80px;
+}
+
+.Weather .currentUnit {
+  font-size: 40px;
+}
