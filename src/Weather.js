@@ -1,12 +1,10 @@
 import React from "react";
 
-import Temp from "./Temp";
-
 export default function Weather() {
   return (
     <div className="Weather">
       <main>
-        <div className="current-weather">
+        <div className="current-weather d-flex">
           <div>
             <h1>Paris</h1>
             <p>
@@ -15,7 +13,9 @@ export default function Weather() {
               Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
             </p>
           </div>
-          <Temp />
+          <div className="currentTemp">
+            ☀️ <span>14</span>°C
+          </div>
         </div>
       </main>
     </div>
