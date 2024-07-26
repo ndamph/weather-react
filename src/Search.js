@@ -11,7 +11,7 @@ export default function Search() {
             type="search"
             className="searchBar"
             placeholder="Enter a city.."
-            autofocus
+            autoFocus
             required
           />
           <input type="submit" className="searchButton" value="Search" />
