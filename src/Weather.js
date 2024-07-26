@@ -3,31 +3,37 @@ import axios from "axios";
 
 import "./Weather.css";
 
-export default function Weather() {
-  const [temp, setTemp] = useState(null);
-  const [loading, setLoading] = useState(true);
+export default function Weather(props) {
+  const [weather, setWeather] = useState({ ready: false });
 
   function handleResponse(response) {
     console.log(response);
-    setTemp(Math.round(response.data.temperature.current));
-    setLoading(false);
+    setWeather({
+      ready: true,
+      city: response.data.city,
+      temp: Math.round(response.data.temperature.current),
+      description: response.data.condition.description,
+      humidity: response.data.temperature.humidity,
+      wind: response.data.wind.speed,
+    });
   }
 
-  if (loading) {
+  if (weather.ready) {
     return (
       <div className="Weather">
         <main>
-          <div className="current-weather d-flex justify-content-between">
-            <div>
-              <h1>Paris</h1>
+          <div className="current-weather d-flex justify-content-between text-capitalize">
+            <div className="weatherConditions">
+              <h1>{weather.city}</h1>
               <p>
-                <span>Saturday 15:32</span>, moderate rain
+                <span>Saturday 15:32</span>, {weather.description}
                 <br />
-                Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+                Humidity: <strong>{weather.humidity}%</strong>, Wind:{" "}
+                <strong>{weather.wind}km/h</strong>
               </p>
             </div>
             <div className="currentTemp d-flex">
-              ☀️ <span className="tempDigits">{temp}</span>
+              ☀️ <span className="tempDigits">{weather.temp}</span>
               <span className="currentUnit">°C</span>
             </div>
           </div>
@@ -35,11 +41,10 @@ export default function Weather() {
       </div>
     );
   } else {
-    let city = "Winnipeg";
     let apiKey = `73fd7aeeb1fc6do18b8423c70f3b718t`;
-    let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+    let url = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}`;
     axios.get(url).then(handleResponse);
 
-    return "Loading..";
+    return "Loading weather..";
   }
 }
