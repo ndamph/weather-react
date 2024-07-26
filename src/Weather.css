@@ -3,9 +3,12 @@
   font-size: 18px;
 }
 
+.Weather .weatherConditions {
+  text-align: left;
+}
+
 .Weather h1 {
   font-size: 45px;
-  text-align: left;
 }
 
 .Weather .tempDigits {
