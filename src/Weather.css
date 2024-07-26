@@ -1,3 +1,13 @@
+.Weather {
+  margin: 15px;
+  font-size: 18px;
+}
+
+.Weather h1 {
+  font-size: 45px;
+  text-align: left;
+}
+
 .Weather .tempDigits {
   font-size: 80px;
 }

@@ -6,10 +6,10 @@ export default function Search() {
   return (
     <div className="Search">
       <header>
-        <form>
+        <form className="rounded-pill">
           <input
             type="search"
-            classNaame="searchBar"
+            className="searchBar"
             placeholder="Enter a city.."
             autofocus
             required

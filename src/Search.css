@@ -1,3 +1,20 @@
-.Search input .searchBar {
-  font-size: 90px;
+.Search {
+  font-size: 20px;
+  margin: 15px 15px 30px;
+}
+
+.Search .searchBar {
+  padding: 5px 10px;
+  background: rgb(244, 243, 243);
+  border: 1px solid grey;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.Search .searchButton {
+  padding: 5px 10px;
+  background: rgb(212, 212, 212);
+  border: 1px solid grey;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
