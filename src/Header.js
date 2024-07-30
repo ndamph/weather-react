@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./Search.css";
+import "./Header.css";
 
-export default function Search() {
+export default function Header() {
   return (
-    <div className="Search">
+    <div className="Header">
       <header>
         <form className="rounded-pill">
           <input
