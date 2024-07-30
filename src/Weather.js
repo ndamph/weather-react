@@ -8,6 +8,7 @@ export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
 
   function handleResponse(response) {
+    console.log(response);
     setWeather({
       ready: true,
       city: response.data.city,
@@ -16,6 +17,7 @@ export default function Weather(props) {
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
       date: new Date(response.data.time * 1000),
+      iconUrl: response.data.condition.icon_url,
     });
   }
 
@@ -40,7 +42,8 @@ export default function Weather(props) {
               </p>
             </div>
             <div className="currentTemp d-flex">
-              ☀️ <span className="tempDigits">{weather.temp}</span>
+              <img src={weather.iconUrl} alt={weather.description}></img>
+              <span className="tempDigits">{weather.temp}</span>
               <span className="currentUnit">°C</span>
             </div>
           </div>
