@@ -23,6 +23,7 @@ export default function Header(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    search();
   }
 
   function handleChange(event) {
