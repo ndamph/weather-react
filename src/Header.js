@@ -9,6 +9,7 @@ export default function Header(props) {
   const [weather, setWeather] = useState({ ready: false });
 
   function handleResponse(response) {
+    console.log(response);
     setWeather({
       ready: true,
       city: response.data.city,
@@ -17,7 +18,7 @@ export default function Header(props) {
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
       date: new Date(response.data.time * 1000),
-      iconUrl: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
     });
   }
 
@@ -58,7 +59,7 @@ export default function Header(props) {
             humidity={weather.humidity}
             wind={weather.wind}
             date={weather.date}
-            iconUrl={weather.iconUrl}
+            icon={weather.icon}
           />
         </header>
       </div>

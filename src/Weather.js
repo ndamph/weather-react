@@ -1,6 +1,7 @@
 import React from "react";
 
 import DateStamp from "./DateStamp";
+import WeatherIcon from "./WeatherIcon";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -22,7 +23,7 @@ export default function Weather(props) {
             </div>
           </div>
           <div className="currentTemp d-flex">
-            <img src={props.iconUrl} alt={props.description}></img>
+            <WeatherIcon code={props.icon} />
             <span className="tempDigits">{props.temp}</span>
             <span className="currentUnit">°C</span>
           </div>
