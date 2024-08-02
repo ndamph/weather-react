@@ -9,7 +9,6 @@ export default function Header(props) {
   const [weather, setWeather] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response);
     setWeather({
       ready: true,
       city: response.data.city,

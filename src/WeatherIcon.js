@@ -1,6 +1,7 @@
 import React from "react";
 
 import ReactAnimatedWeather from "react-animated-weather";
+import "./WeatherIcon.css";
 
 export default function WeatherIcon(props) {
   const mapping = {
@@ -19,15 +20,15 @@ export default function WeatherIcon(props) {
     "thunder-storm-day": "CLEAR_DAY",
     "thunder-storm-night": "CLEAR_NIGHT",
     "snow-day": "SNOW",
-    "snow-day": "SNOW",
-    "mist-night": "FOG",
+    "snow-night": "SNOW",
+    "mist-day": "FOG",
     "mist-night": "FOG",
   };
   return (
-    <div className="WeatherIcon">
+    <div className="WeatherIcon mt-3">
       <ReactAnimatedWeather
         icon={mapping[props.code]}
-        color="black"
+        color="#668a77"
         size={65}
         animate={true}
       />
