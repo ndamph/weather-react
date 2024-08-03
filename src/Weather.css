@@ -14,3 +14,15 @@
 .Weather .tempDigits {
   font-size: 70px;
 }
+
+@media (max-width: 900px) {
+  .Weather {
+    font-size: 12px;
+  }
+  .Weather h1 {
+    font-size: 25px;
+  }
+  .Weather .tempDigits {
+    font-size: 35px;
+  }
+}

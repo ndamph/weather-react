@@ -19,3 +19,16 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+
+@media (max-width: 900px) {
+  .Header {
+    font-size: 15px;
+  }
+  .Header .searchBar {
+    max-width: 150px;
+    padding: 3px 8px;
+  }
+  .Header .searchButton {
+    padding: 3px 8px;
+  }
+}

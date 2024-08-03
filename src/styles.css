@@ -16,8 +16,16 @@
     url("/images/forest.jpeg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding: 150px 0;
   margin: 0;
   text-align: center;
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .App .container {
+    max-width: 350px;
+    padding: 20px 10px;
+  }
 }

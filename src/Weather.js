@@ -12,15 +12,12 @@ export default function Weather(props) {
         <div className="current-weather d-flex justify-content-between">
           <div className="weatherConditions">
             <h1>{props.city}</h1>
-            <div className="d-flex flex-row text-capitalize">
-              <div>
-                <DateStamp date={props.date} />
-              </div>
-              <div>, {props.description}</div>
+            <div className="text-capitalize">
+              <DateStamp date={props.date} description={props.description} />
             </div>
             <div>
-              Humidity: <strong>{props.humidity}%</strong>, Wind:{" "}
-              <strong>{props.wind}km/h</strong>
+              Humidity: <strong>{props.humidity}%</strong>, <br />
+              Wind: <strong>{props.wind}km/h</strong>
             </div>
           </div>
           <div className="currentTemp d-flex">

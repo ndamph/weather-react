@@ -6,3 +6,10 @@
 .Footer p {
   margin: 0;
 }
+
+@media (max-width: 900px) {
+  .Footer {
+    padding-top: 0px;
+    font-size: 10px;
+  }
+}
