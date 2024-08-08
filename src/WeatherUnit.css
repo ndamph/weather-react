@@ -2,10 +2,6 @@
   font-size: 25px;
 }
 
-.WeatherUnit a {
-  text-decoration: none;
-}
-
 @media (max-width: 900px) {
   .WeatherUnit .currentUnit {
     font-size: 13px;
