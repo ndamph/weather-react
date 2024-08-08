@@ -1,0 +1,17 @@
+.Forecast {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Forecast .maxTemp {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.Forecast .minTemp {
+  opacity: 0.8;
+}
+
+.Forecast .WeatherIcon {
+  margin: 5px 0;
+}

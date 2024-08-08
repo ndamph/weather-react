@@ -22,11 +22,11 @@ export default function Weather(props) {
             </div>
           </div>
           <div className="currentTemp d-flex">
-            <WeatherIcon code={props.icon} />
+            <WeatherIcon code={props.icon} size={72} />
             <WeatherUnit temp={props.temp} />
           </div>
         </div>
-        <Forecast />
+        <Forecast code={props.icon} />
       </main>
     </div>
   );
