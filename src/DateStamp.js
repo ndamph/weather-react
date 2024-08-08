@@ -21,8 +21,8 @@ export default function DateStamp(props) {
   }
 
   return (
-    <div className="DateStamp text-capitalize">
-      {days[day]} {hours}:{minutes}, {props.description}
+    <div className="DateStamp">
+      {days[day]} {hours}:{minutes}
     </div>
   );
 }

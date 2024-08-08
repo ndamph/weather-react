@@ -26,7 +26,7 @@ export default function Weather(props) {
             <WeatherUnit temp={props.temp} />
           </div>
         </div>
-        <Forecast code={props.icon} />
+        <Forecast code={props.icon} city={props.city} />
       </main>
     </div>
   );
