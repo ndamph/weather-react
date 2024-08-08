@@ -17,12 +17,12 @@
 
 @media (max-width: 900px) {
   .Weather {
-    font-size: 12px;
+    font-size: 10px;
   }
   .Weather h1 {
-    font-size: 25px;
+    font-size: 23px;
   }
   .Weather .tempDigits {
-    font-size: 35px;
+    font-size: 33px;
   }
 }

@@ -8,6 +8,6 @@
 
 @media (max-width: 900px) {
   .WeatherUnit .currentUnit {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
