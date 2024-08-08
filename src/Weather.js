@@ -3,6 +3,7 @@ import React from "react";
 import DateStamp from "./DateStamp";
 import WeatherIcon from "./WeatherIcon";
 import WeatherUnit from "./WeatherUnit";
+import Forecast from "./Forecast";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -25,6 +26,7 @@ export default function Weather(props) {
             <WeatherUnit temp={props.temp} />
           </div>
         </div>
+        <Forecast />
       </main>
     </div>
   );
